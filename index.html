@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="bg-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <a href="https://sanyamsuyal.github.io/Portfolio/" target="_blank" class="hire-me-btn">Hire Me</a>
+    <div class="container">
+        <h1 class="glow">Typing Speed Test</h1>
+        <div class="main-content">
+            <div class="typing-box">
+                <div id="text-container"></div>
+                <textarea id="input" autofocus></textarea>
+            </div>
+            <div class="sidebar">
+                <h3>Select Time:</h3>
+                <button class="time-btn" data-time="10">10s</button>
+                <button class="time-btn" data-time="30">30s</button>
+                <button class="time-btn" data-time="60">60s</button>
+                <h3>Rank:</h3>
+                <p id="rank">-</p>
+            </div>
+        </div>
+        <div class="stats">
+            <p>⏱ Time: <span id="timer">60</span>s</p>
+            <p>💨 WPM: <span id="wpm">0</span></p>
+            <p>🎯 Accuracy: <span id="accuracy">100</span>%</p>
+        </div>
+        <button id="restart">Restart</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
